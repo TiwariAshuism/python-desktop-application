@@ -1,0 +1,18 @@
+Last_test.py:
+Serial connection via ports
+Connect to your bluetooth device, pair the device first. It will not be connected unless you run the code. The connection will be successful once you
+find out the outgoing port to which it is connected to. After finding the outgoing port via the bluetooth settings, specify it in the code to establish connection.
+After connecting, the default sequence will be sent. After the default sequence is sent it will wait for you to click the start stream.
+The data will stream for a default duration of 5 minutes after you click start stream. You can click stop stream anytime in between.
+Clicking stop stream will automatically save the data to the text files(see save function).
+If you do not stop the stream manually, it will end after 5 minutes and auto save.
+You cannot see the data in its hex values in the normal running. Only after it is saved you can see the actual data. Ensure that there is no data loss.
+
+LSL_Receiver_final.py:
+Connect to a transmitting app(EEGLSL Transmitter). In the app you should start the stream of data after properly establishing the connection between the app
+and the bt device which streams the data.
+Once you click start stream in the app, run the code and it should give you the plots for the eeg and the imu.
+
+Ble_connection.py:
+For service characteristics of the bt device you have connected to.
+The services id are commented out below the code.
